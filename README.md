@@ -74,7 +74,7 @@ This is an ERC20 token contract that simulates USDC (USD Circle). Its main featu
 - Includes a public mint function (note: this is for testing only, as in a real token it should be restricted)
 
 ### GlamBot.sol
-Deployed at [0x63ba29caf4c40dada8a61d10ab5d2728c806b61f](https://testnet.bscscan.com/address/0x63ba29caf4c40dada8a61d10ab5d2728c806b61f)
+Deployed at [0x691db0931d5c60bedb326f6d7552466a15d67797](https://testnet.bscscan.com/address/0x691db0931d5c60bedb326f6d7552466a15d67797)
 
 This is a more complex contract that implements a loyalty system with points and coupons for merchants. Its main features are:
 
