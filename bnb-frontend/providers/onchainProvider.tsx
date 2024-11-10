@@ -19,19 +19,19 @@ const dynamicEnvId = process.env.NEXT_PUBLIC_DYNAMIC_ENV_ID;
 
 const evmNetworks = [
   {
-    blockExplorerUrls: ['testnet.bscscan.com'],
+    blockExplorerUrls: ['https://testnet.bscscan.com'],
     chainId: 97,
     chainName: 'BNB Smart Chain Testnet',
     iconUrls: ['https://app.dynamic.xyz/assets/networks/bnb.svg'],
-    name: 'tBNB',
+    name: 'BNB',
     nativeCurrency: {
       decimals: 18,
       name: 'tBNB',
       symbol: 'tBNB',
     },
     networkId: 97,
-    rpcUrls: ['97.rpc.thirdweb.com'],
-    vanityName: 'tBNB',
+    rpcUrls: ['https://bsc-testnet-rpc.publicnode.com'],
+    vanityName: 'BNB',
   },
 ];
 
