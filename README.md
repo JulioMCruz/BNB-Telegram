@@ -15,7 +15,7 @@ GoldBeauty is an innovative digital assistant that transforms the beauty industr
 
 ## 🤖 Telegram Bot Commands
 
-Each business has a dedicated Telegram bot with the following commands:
+Connect with our official bot [@GoldBeautyBot](https://t.me/GoldBeautyBot) to access the following commands:
 
 - `/appointment` - Find and schedule next available appointment
 - `/points` - Check current reward token balance
