@@ -1,0 +1,286 @@
+{
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        { "name": "_token", "type": "address", "internalType": "address" }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "activateMerchant",
+      "inputs": [
+        { "name": "_name", "type": "string", "internalType": "string" }
+      ],
+      "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "changePointsToCoupon",
+      "inputs": [
+        { "name": "_couponId", "type": "uint256", "internalType": "uint256" },
+        { "name": "_merchant", "type": "address", "internalType": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "deactivateCoupon",
+      "inputs": [
+        { "name": "_couponId", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "deactivateMerchant",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "getCoupon",
+      "inputs": [
+        { "name": "_merchant", "type": "address", "internalType": "address" },
+        { "name": "_couponId", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple",
+          "internalType": "struct GlamBot.CouponMetadata",
+          "components": [
+            { "name": "name", "type": "string", "internalType": "string" },
+            {
+              "name": "description",
+              "type": "string",
+              "internalType": "string"
+            },
+            {
+              "name": "pointsToRedeem",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            { "name": "isActive", "type": "bool", "internalType": "bool" }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getMerchant",
+      "inputs": [
+        { "name": "_merchant", "type": "address", "internalType": "address" }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple",
+          "internalType": "struct GlamBot.MerchantMetadata",
+          "components": [
+            { "name": "name", "type": "string", "internalType": "string" },
+            { "name": "isActive", "type": "bool", "internalType": "bool" }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getMerchantAddress",
+      "inputs": [
+        { "name": "_name", "type": "string", "internalType": "string" }
+      ],
+      "outputs": [{ "name": "", "type": "address", "internalType": "address" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getMerchantCoupons",
+      "inputs": [
+        { "name": "_merchant", "type": "address", "internalType": "address" }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple[]",
+          "internalType": "struct GlamBot.CouponMetadata[]",
+          "components": [
+            { "name": "name", "type": "string", "internalType": "string" },
+            {
+              "name": "description",
+              "type": "string",
+              "internalType": "string"
+            },
+            {
+              "name": "pointsToRedeem",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            { "name": "isActive", "type": "bool", "internalType": "bool" }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getMerchantName",
+      "inputs": [
+        { "name": "_merchant", "type": "address", "internalType": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "string", "internalType": "string" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getPoints",
+      "inputs": [
+        { "name": "_user", "type": "address", "internalType": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getTokenAddress",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "address", "internalType": "address" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getWalletCoupon",
+      "inputs": [
+        { "name": "_user", "type": "address", "internalType": "address" },
+        { "name": "_merchant", "type": "address", "internalType": "address" },
+        { "name": "_couponId", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple",
+          "internalType": "struct GlamBot.TicketCouponMetadata",
+          "components": [
+            {
+              "name": "couponId",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "merchant",
+              "type": "address",
+              "internalType": "address"
+            },
+            { "name": "name", "type": "string", "internalType": "string" },
+            {
+              "name": "description",
+              "type": "string",
+              "internalType": "string"
+            },
+            { "name": "isActive", "type": "bool", "internalType": "bool" }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getWalletCoupons",
+      "inputs": [
+        { "name": "_user", "type": "address", "internalType": "address" },
+        { "name": "_merchant", "type": "address", "internalType": "address" }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple[]",
+          "internalType": "struct GlamBot.TicketCouponMetadata[]",
+          "components": [
+            {
+              "name": "couponId",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "merchant",
+              "type": "address",
+              "internalType": "address"
+            },
+            { "name": "name", "type": "string", "internalType": "string" },
+            {
+              "name": "description",
+              "type": "string",
+              "internalType": "string"
+            },
+            { "name": "isActive", "type": "bool", "internalType": "bool" }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "makeCoupon",
+      "inputs": [
+        { "name": "_name", "type": "string", "internalType": "string" },
+        { "name": "_description", "type": "string", "internalType": "string" },
+        {
+          "name": "_pointsToRedeem",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "payToMerchant",
+      "inputs": [
+        { "name": "_merchant", "type": "address", "internalType": "address" },
+        { "name": "_amount", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "redeemCoupon",
+      "inputs": [
+        { "name": "_merchant", "type": "address", "internalType": "address" },
+        { "name": "_couponId", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "walletCoupons",
+      "inputs": [
+        { "name": "user", "type": "address", "internalType": "address" },
+        { "name": "merchant", "type": "address", "internalType": "address" },
+        { "name": "", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [
+        { "name": "couponId", "type": "uint256", "internalType": "uint256" },
+        { "name": "merchant", "type": "address", "internalType": "address" },
+        { "name": "name", "type": "string", "internalType": "string" },
+        { "name": "description", "type": "string", "internalType": "string" },
+        { "name": "isActive", "type": "bool", "internalType": "bool" }
+      ],
+      "stateMutability": "view"
+    },
+    { "type": "error", "name": "InactiveCoupon", "inputs": [] },
+    { "type": "error", "name": "InactiveMerchant", "inputs": [] },
+    { "type": "error", "name": "ReentrancyGuardReentrantCall", "inputs": [] },
+    { "type": "error", "name": "ZeroAmount", "inputs": [] },
+    { "type": "error", "name": "amountInsufficient", "inputs": [] }
+  ]
+}
