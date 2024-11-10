@@ -76,7 +76,9 @@ Connect with our official bot [@GoldBeautyBot](https://t.me/GoldBeautyBot) to ac
 - OpenAI Agent integration
 - Real-time currency conversion
 - Transaction template system
+# Figma UX Design
 
+[Figma Design](https://www.figma.com/design/dL8ErFiI4vc8XD3YavT6LJ/Gold-Beauty-BKK?node-id=0-1&t=FQqVpNVjiKuuGYNC-1)
 ## 🔗 Getting Started
 
 [Installation and setup instructions to be added]
